@@ -1,11 +1,9 @@
 package es.unican.ps.impuestoCirculacion.presentationLayer.test;
 
-import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.*;
-import org.fest.swing.core.KeyPressInfo;
 import org.fest.swing.fixture.FrameFixture;
 
 import es.unican.ps.impuestoCirculacion.businessLayer.*;
