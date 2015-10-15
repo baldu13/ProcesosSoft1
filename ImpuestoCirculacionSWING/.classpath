@@ -15,5 +15,7 @@
 	<classpathentry kind="lib" path="D:/JavaWorkspace/Librerias/fest-swing-1.2/lib/jcip-annotations-1.0-sources.jar"/>
 	<classpathentry kind="lib" path="D:/JavaWorkspace/Librerias/fest-swing-1.2/fest-swing-1.2.jar"/>
 	<classpathentry kind="lib" path="D:/JavaWorkspace/Librerias/fest-swing-1.2/fest-swing-1.2-sources.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ImpuestoCirculacionBusiness"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ImpuestoCirculacionDAO"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

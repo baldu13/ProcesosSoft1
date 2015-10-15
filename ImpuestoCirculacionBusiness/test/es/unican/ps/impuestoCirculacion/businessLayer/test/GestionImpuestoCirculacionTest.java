@@ -71,9 +71,8 @@ public class GestionImpuestoCirculacionTest {
 	
 	@Test
 	public void testTotalContribuyente(){
-		//TODO
 		//Contribuyente existente
-		assertTrue("Vale: "+gic.totalContribuyente("11111111B"),gic.totalContribuyente("11111111B")==247.38);
+		assertTrue(gic.totalContribuyente("11111111B")==247.38);
 		//Contribuyente inexistente
 		assertTrue(gic.totalContribuyente("00000000O") == 0.0);
 	}
