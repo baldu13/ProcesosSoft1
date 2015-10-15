@@ -53,7 +53,7 @@ public class GestionImpuestoCirculacion implements IGestionContribuyentes, IGest
 	@Override
 	public double totalContribuyente(String dni) {
 
-		double result = 1.0;
+		double result = 0.0;
 		Contribuyente c = contribuyentes.contribuyente(dni);
 		
 		if (c!=null) {
@@ -72,7 +72,7 @@ public class GestionImpuestoCirculacion implements IGestionContribuyentes, IGest
 	 */
 	@Override
 	public Contribuyente contribuyente(String dni) {
-		return contribuyentes.eliminaContribuyente(dni);
+		return contribuyentes.contribuyente(dni);
 	}
 
 	@Override
