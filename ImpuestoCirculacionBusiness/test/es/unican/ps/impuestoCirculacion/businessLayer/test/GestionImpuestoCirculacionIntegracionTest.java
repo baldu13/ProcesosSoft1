@@ -86,23 +86,62 @@ public class GestionImpuestoCirculacionIntegracionTest {
 	
 	@Test
 	public void altaContribuyente(){
-		//TODO
+		//Alta normal
 		Contribuyente c = new Contribuyente();
-		gic.altaContribuyente(c);
+		c.setDni("11111111B");
+		c.setNombre("Juan");
+		c.setApellido1("Ete");
+		c.setApellido2("Mikasa");
+		c.setListaVehiculos(new ArrayList<Vehiculo>());
+		Contribuyente resul = gic.altaContribuyente(c); 
+		assertTrue(c.equals(resul));
+		assertTrue(c.equals(gic.contribuyente("11111111B")));
+		//Alta existente
+		c = new Contribuyente();
+		c.setDni("72189333S");
+		c.setNombre("Víctor");
+		c.setApellido1("Gómez");
+		c.setApellido2("Cobo");
+		c.setListaVehiculos(new ArrayList<Vehiculo>());
+		resul = gic.altaContribuyente(c); 
+		assertTrue(c.equals(resul));
 	}
 	
 	@Test
 	public void altaVehiculo(){
+		//Contribuyente a anadir los vehiculos
+		Contribuyente c = new Contribuyente();
+		c.setDni("11111111B");
+		c.setNombre("Juan");
+		c.setApellido1("Ete");
+		c.setApellido2("Mikasa");
+		c.setListaVehiculos(new ArrayList<Vehiculo>());
+		gic.altaContribuyente(c); 
 		
+		Vehiculo v = new Turismo();
+		v.setMatricula("1111BBB");
+		v.setFecha1Matriculacion(new Date(2010-1900,5-1,15));
+		gic.altaVehiculo(v, c); 
+		assertTrue(c.getListaVehiculos().contains(v));
+		
+		c = gic.contribuyente("72189333S");
+		gic.altaVehiculo(v, c); 
+		assertTrue(!c.getListaVehiculos().contains(v));
+		gic.altaVehiculo(v, null); //Si no da excepcion, todo correcto
 	}
 	
 	@Test
 	public void bajaContribuyente(){
+		gic.bajaContribuyente("71345631P");
+		assertTrue(gic.contribuyente("71345631P")==null);
 		
+		gic.bajaContribuyente("00000000O"); //Si no da excepcion va bien
 	}
 	
 	@Test
 	public void bajaVehiculo(){
+		gic.bajaVehiculo("3543DDF", gic.contribuyente("78493121S"));
+		assertTrue(gic.vehiculo("3543DDF")==null);
 		
 	}
 }

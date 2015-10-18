@@ -66,11 +66,19 @@ public class ImpuestosDAO implements IContribuyentesDAO, IVehiculosDAO {
 
 	@Override
 	public Vehiculo creaVehiculo(Vehiculo v) {
-			return v;
+		vehiculos().add(v);
+		return v;
 	}
 
 	@Override
 	public Vehiculo eliminaVehiculo(String matricula) {
+		for(Contribuyente c:ayun.getContribuyentes()){
+			for(Vehiculo v: c.getListaVehiculos()){
+				if(v.getMatricula().equals(matricula)){
+					c.getListaVehiculos().remove(v);
+				}
+			}
+		}
 		return vehiculo(matricula);
 	}
 

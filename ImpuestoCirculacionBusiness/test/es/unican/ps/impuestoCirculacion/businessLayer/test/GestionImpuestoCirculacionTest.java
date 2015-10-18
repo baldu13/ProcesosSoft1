@@ -32,8 +32,8 @@ public class GestionImpuestoCirculacionTest {
 		vehiculos.add(v1);
 		vehiculos.add(v2);
 		
-		when(icd.contribuyente("11111111B")).thenReturn(c);
-		when(icd.contribuyente("00000000O")).thenReturn(null);
+		when(icd.datosContribuyente("11111111B")).thenReturn(c);
+		when(icd.datosContribuyente("00000000O")).thenReturn(null);
 
 		when(ivd.vehiculo("1111BBB")).thenReturn(v1);
 		when(ivd.vehiculo("0000OOO")).thenReturn(null);
