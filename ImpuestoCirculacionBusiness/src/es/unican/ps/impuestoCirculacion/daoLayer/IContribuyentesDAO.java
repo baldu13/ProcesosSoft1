@@ -8,8 +8,8 @@ import es.unican.ps.impuestoCirculacion.domain.Contribuyente;
 
 public interface IContribuyentesDAO extends ILifecycle {
 	
-	public Contribuyente creaContribuyente(Contribuyente c);
-	public Contribuyente contribuyente(String dni);
+	public Contribuyente nuevoContribuyente(Contribuyente c);
+	public Contribuyente datosContribuyente(String dni);
 	public Contribuyente actualizaContribuyente(Contribuyente nuevo);
 	public Contribuyente eliminaContribuyente(String dni);
 	public List<Contribuyente> contribuyentes();

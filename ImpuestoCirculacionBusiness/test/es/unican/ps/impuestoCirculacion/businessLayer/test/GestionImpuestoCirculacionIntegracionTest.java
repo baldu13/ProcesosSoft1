@@ -40,7 +40,7 @@ public class GestionImpuestoCirculacionIntegracionTest {
 	@Test
 	public void testTotalContribuyente(){
 		//Contribuyente existente
-		//assertTrue(gic.totalContribuyente("72189333S")==212.04);
+		assertTrue(gic.totalContribuyente("72189333S")==212.04);
 		//Contribuyente inexistente
 		assertTrue(gic.totalContribuyente("00000000O") == 0.0);
 	}
@@ -82,6 +82,28 @@ public class GestionImpuestoCirculacionIntegracionTest {
 		//Vehiculo inexistente
 		v = gic.vehiculo("0000BBB");
 		assertTrue(v == null);
+	}
+	
+	@Test
+	public void altaContribuyente(){
+		//TODO
+		Contribuyente c = new Contribuyente();
+		gic.altaContribuyente(c);
+	}
+	
+	@Test
+	public void altaVehiculo(){
+		
+	}
+	
+	@Test
+	public void bajaContribuyente(){
+		
+	}
+	
+	@Test
+	public void bajaVehiculo(){
+		
 	}
 }
 

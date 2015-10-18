@@ -27,7 +27,7 @@ public class GestionImpuestoCirculacion implements IGestionContribuyentes, IGest
 	 */
 	@Override
 	public Contribuyente altaContribuyente(Contribuyente c) {
-		return contribuyentes.creaContribuyente(c);
+		return contribuyentes.nuevoContribuyente(c);
 	}
 
 	/**
@@ -54,7 +54,7 @@ public class GestionImpuestoCirculacion implements IGestionContribuyentes, IGest
 	public double totalContribuyente(String dni) {
 
 		double result = 0.0;
-		Contribuyente c = contribuyentes.contribuyente(dni);
+		Contribuyente c = contribuyentes.datosContribuyente(dni);
 		
 		if (c!=null) {
 			for (Vehiculo v:c.getListaVehiculos()) {
@@ -72,7 +72,7 @@ public class GestionImpuestoCirculacion implements IGestionContribuyentes, IGest
 	 */
 	@Override
 	public Contribuyente contribuyente(String dni) {
-		return contribuyentes.contribuyente(dni);
+		return contribuyentes.datosContribuyente(dni);
 	}
 
 	@Override
