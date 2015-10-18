@@ -132,17 +132,37 @@ public class GestionImpuestoCirculacionIntegracionTest {
 	
 	@Test
 	public void bajaContribuyente(){
+		//Baja contribuyente sin vehiculos
+		Contribuyente c = new Contribuyente();
+		c.setDni("11111111B");
+		c.setNombre("Juan");
+		c.setApellido1("Ete");
+		c.setApellido2("Mikasa");
+		c.setListaVehiculos(new ArrayList<Vehiculo>());
+		gic.altaContribuyente(c); 
+		gic.bajaContribuyente("11111111B");
+		assertTrue(gic.contribuyente("11111111B")==null);
+		//Baja contribuyente con vehiculos
 		gic.bajaContribuyente("71345631P");
-		assertTrue(gic.contribuyente("71345631P")==null);
-		
+		assertTrue(gic.contribuyente("71345631P")!=null);
+		//Baja contribuyente inexistente
 		gic.bajaContribuyente("00000000O"); //Si no da excepcion va bien
 	}
 	
 	@Test
 	public void bajaVehiculo(){
+		//Baja de vehiculo que existe con contribuyente no existente
+		gic.bajaVehiculo("3543DDF", null);
+		assertTrue(gic.vehiculo("3543DDF")!=null);
+		//Baja de vehiculo de contribuyente invalido
+		gic.bajaVehiculo("3543DDF", gic.contribuyente("73951831H"));
+		assertTrue(gic.vehiculo("3543DDF")!=null);
+		//Baja de vehiculo que existe con contribuyente
 		gic.bajaVehiculo("3543DDF", gic.contribuyente("78493121S"));
 		assertTrue(gic.vehiculo("3543DDF")==null);
-		
+		//Baja de vehiculo que no existe
+		gic.bajaVehiculo("0000OOO", gic.contribuyente("78493121S"));
+		assertTrue(gic.vehiculo("0000OOO")==null);
 	}
 }
 

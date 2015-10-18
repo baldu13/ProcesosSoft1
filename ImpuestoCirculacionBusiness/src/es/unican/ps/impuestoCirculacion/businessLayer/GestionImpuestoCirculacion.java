@@ -92,12 +92,14 @@ public class GestionImpuestoCirculacion implements IGestionContribuyentes, IGest
 
 	@Override
 	public Vehiculo bajaVehiculo(String matricula, Contribuyente c) {
-		for (Vehiculo v:c.getListaVehiculos()) {
-			if (v.getMatricula().equals(matricula)) {
-				c.getListaVehiculos().remove(v);
-				vehiculos.eliminaVehiculo(matricula);
-				contribuyentes.actualizaContribuyente(c);
-				return v;
+		if(c!=null){
+			for (Vehiculo v:c.getListaVehiculos()) {
+				if (v.getMatricula().equals(matricula)) {
+					c.getListaVehiculos().remove(v);
+					vehiculos.eliminaVehiculo(matricula);
+					contribuyentes.actualizaContribuyente(c);
+					return v;
+				}
 			}
 		}
 		return null;

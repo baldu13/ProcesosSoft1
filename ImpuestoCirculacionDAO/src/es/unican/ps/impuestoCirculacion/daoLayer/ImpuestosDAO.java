@@ -49,7 +49,7 @@ public class ImpuestosDAO implements IContribuyentesDAO, IVehiculosDAO {
 	@Override
 	public Contribuyente eliminaContribuyente(String dni) {
 		for (Contribuyente c: ayun.getContribuyentes()) {
-			if (c.getDni().equals(dni)) {
+			if (c.getDni().equals(dni) && c.getListaVehiculos().size()==0) {
 				ayun.getContribuyentes().remove(c);
 				return c;
 			}
