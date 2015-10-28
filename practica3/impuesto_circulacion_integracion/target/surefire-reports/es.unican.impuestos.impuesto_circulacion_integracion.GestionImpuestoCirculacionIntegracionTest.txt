@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: es.unican.impuestos.impuesto_circulacion_integracion.GestionImpuestoCirculacionIntegracionTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.235 sec - in es.unican.impuestos.impuesto_circulacion_integracion.GestionImpuestoCirculacionIntegracionTest
