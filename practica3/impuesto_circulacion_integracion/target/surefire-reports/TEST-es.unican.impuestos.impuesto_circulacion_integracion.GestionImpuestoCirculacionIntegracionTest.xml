@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="es.unican.impuestos.impuesto_circulacion_integracion.GestionImpuestoCirculacionIntegracionTest" time="0.188" tests="7" errors="0" skipped="0" failures="0">
+<testsuite name="es.unican.impuestos.impuesto_circulacion_integracion.GestionImpuestoCirculacionIntegracionTest" time="0.302" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_60\jre\bin"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\JavaWorkspace\impuesto_circulacion_integracion"/>
+    <property name="user.dir" value="D:\JavaWorkspace\git\ProcesosSoftware\practica3\impuesto_circulacion_integracion"/>
     <property name="java.runtime.version" value="1.8.0_60-b27"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jdk1.8.0_60\jre\lib\endorsed"/>
@@ -25,7 +25,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 8.1"/>
-    <property name="classworlds.conf" value="D:\JavaWorkspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5050044019031267008.tmp"/>
+    <property name="classworlds.conf" value="D:\JavaWorkspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5177913738610354686.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_60\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files (x86)/Java/jre1.8.0_60/bin/client;C:/Program Files (x86)/Java/jre1.8.0_60/bin;C:/Program Files (x86)/Java/jre1.8.0_60/lib/i386;C:\ProgramData\Oracle\Java\javapath;D:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files\Broadcom\Broadcom 802.11 Network Adapter;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\WIDCOMM\Bluetooth Software\;C:\Program Files\WIDCOMM\Bluetooth Software\syswow64;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Java\jdk1.7.0_79\bin;D:\SonarQube\sonar-runner-2.4\bin;D:\SonarQube\sonar-runner-2.4\bin;C:\Program Files (x86)\Skype\Phone\;D:\Program Files (x86)\Mozilla Firefox\;D:\Program Files (x86)\apache-maven-3.3.3\bin;D:\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -51,7 +51,7 @@
     <property name="java.ext.dirs" value="C:\Program Files (x86)\Java\jdk1.8.0_60\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files (x86)\Java\jdk1.8.0_60\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.8.0_60\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.8.0_60\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.8.0_60\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.8.0_60\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.8.0_60\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.8.0_60\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.8.0_60\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="D:\JavaWorkspace\impuesto_circulacion_integracion\EMBEDDED"/>
+    <property name="maven.home" value="D:\JavaWorkspace\git\ProcesosSoftware\practica3\impuesto_circulacion_integracion\EMBEDDED"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="maven.bootclasspath" value="/D:/eclipse/configuration/org.eclipse.osgi/bundles/535/1/.cp/jars/plexus-classworlds-2.4.jar"/>
@@ -60,11 +60,11 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase name="testVehiculo" classname="es.unican.impuestos.impuesto_circulacion_integracion.GestionImpuestoCirculacionIntegracionTest" time="0.094"/>
-  <testcase name="altaVehiculo" classname="es.unican.impuestos.impuesto_circulacion_integracion.GestionImpuestoCirculacionIntegracionTest" time="0.016"/>
-  <testcase name="altaContribuyente" classname="es.unican.impuestos.impuesto_circulacion_integracion.GestionImpuestoCirculacionIntegracionTest" time="0.015"/>
-  <testcase name="bajaVehiculo" classname="es.unican.impuestos.impuesto_circulacion_integracion.GestionImpuestoCirculacionIntegracionTest" time="0.016"/>
-  <testcase name="bajaContribuyente" classname="es.unican.impuestos.impuesto_circulacion_integracion.GestionImpuestoCirculacionIntegracionTest" time="0.016"/>
-  <testcase name="testTotalContribuyente" classname="es.unican.impuestos.impuesto_circulacion_integracion.GestionImpuestoCirculacionIntegracionTest" time="0.015"/>
-  <testcase name="testContribuyente" classname="es.unican.impuestos.impuesto_circulacion_integracion.GestionImpuestoCirculacionIntegracionTest" time="0.016"/>
+  <testcase name="testVehiculo" classname="es.unican.impuestos.impuesto_circulacion_integracion.GestionImpuestoCirculacionIntegracionTest" time="0.159"/>
+  <testcase name="altaVehiculo" classname="es.unican.impuestos.impuesto_circulacion_integracion.GestionImpuestoCirculacionIntegracionTest" time="0.025"/>
+  <testcase name="altaContribuyente" classname="es.unican.impuestos.impuesto_circulacion_integracion.GestionImpuestoCirculacionIntegracionTest" time="0.024"/>
+  <testcase name="bajaVehiculo" classname="es.unican.impuestos.impuesto_circulacion_integracion.GestionImpuestoCirculacionIntegracionTest" time="0.019"/>
+  <testcase name="bajaContribuyente" classname="es.unican.impuestos.impuesto_circulacion_integracion.GestionImpuestoCirculacionIntegracionTest" time="0.034"/>
+  <testcase name="testTotalContribuyente" classname="es.unican.impuestos.impuesto_circulacion_integracion.GestionImpuestoCirculacionIntegracionTest" time="0.023"/>
+  <testcase name="testContribuyente" classname="es.unican.impuestos.impuesto_circulacion_integracion.GestionImpuestoCirculacionIntegracionTest" time="0.018"/>
 </testsuite>

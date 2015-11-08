@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: es.unican.impuestos.impuesto_circulacion_integracion.VistaFuncionarioIntegracionTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.411 sec - in es.unican.impuestos.impuesto_circulacion_integracion.VistaFuncionarioIntegracionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.376 sec - in es.unican.impuestos.impuesto_circulacion_integracion.VistaFuncionarioIntegracionTest
